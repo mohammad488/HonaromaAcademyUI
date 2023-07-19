@@ -70,12 +70,11 @@
 }
 
 /* Details */
-/* Intro */
 #details-container {
     display: flex;
 }
 
-#details-container > .row{
+#details-container>.row {
     align-items: center;
 }
 
@@ -94,4 +93,35 @@
 
 #details-container img {
     width: 100%;
+}
+
+/* Slider */
+.swiper {
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .swiper-slide {
+        width: 400px;
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.swiper-pagination-bullet-active{
+    background-color: #e6981c;
 }

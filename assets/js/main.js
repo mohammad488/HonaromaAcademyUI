@@ -31,7 +31,8 @@ menuExpandBtn.onclick = () => {
     pageContainer.style.backgroundColor = "#fff";
     pageContainer.style.height = "100vh";
     pageContainer.scrollTo({
-        top: scroll
+        top: scroll,
+        behavior: "instant"
     });
     pageContainer.style.transform = "translateX(300px) scale(0.8)";
     mobileMenu.style.display = "flex";
@@ -50,7 +51,8 @@ menuCollapseBtn.onclick = () => {
         mobileMenu.style.display = "none";
         pageContainer.style.height = "auto";
         window.scrollTo({
-            top: scroll
+            top: scroll,
+            behavior: "instant"
         });
     }, 500);
 };
