@@ -21,20 +21,26 @@
         </button>
         <ul id="mobile-nav-menu">
             <li>
-                <a href="index.html">
-                    خانه
-                    <div class="underline"></div>
-                </a>
-            </li>
-            <li>
                 <a href="job-posts.html">
                     همکاری با ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
+                <a href="about-us.html">
+                    درباره ما
+                    <div class="underline"></div>
+                </a>
+            </li>
+            <li>
+                <a href="our-team.html">
+                    تیما ما
+                    <div class="underline"></div>
+                </a>
+            </li>
+            <li>
                 <a href="contact-us.html">
-                    خانه
+                    ارتباط با ما
                     <div class="underline"></div>
                 </a>
             </li>
@@ -60,12 +66,15 @@
     </div>
     <div id="page">
         <nav class="animate__animated animate__fadeIn">
-            <img src="assets/images/logo.png" alt="" height="24" />
+            <a href="index.html"><img src="assets/images/logo.png" alt="" height="24" /></a>
             <ul id="nav-menu">
-                <li class="active"><a class="nav-link" href="index.html">خانه</a>
+                <li><a class="nav-link" href="job-posts.html">همکاری با ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="job-posts.html">همکاری با ما</a>
+                <li><a class="nav-link" href="about-us.html">درباره ما</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a class="nav-link" href="our-team.html">تیم ما</a>
                     <div class="underline"></div>
                 </li>
                 <li><a class="nav-link" href="contact-us.html">ارتباط با ما</a>
@@ -165,7 +174,7 @@
         </div>
         <div id="creative-services-container">
             <div class="creative-service-container">
-                <div class="creative-service-animate animate__animated">
+                <div class="animation" data-animation="animate__rotateIn">
                     <img src="./assets/images/sampleCreativeImageTp.png" height="471" />
                 </div>
                 <div class="creative-text-container" id="creative-container-1">
@@ -174,7 +183,7 @@
                 </div>
             </div>
             <div class="creative-service-container creative-service-container-reverse">
-                <div class="creative-service-animate animate__animated">
+                <div  class="animation" data-animation="animate__rotateIn">
                     <img src="./assets/images/sampleCreativeImageTp.png" height="471" />
                 </div>
                 <div class="creative-text-container creative-text-container-left" id="creative-container-1">
@@ -189,7 +198,7 @@
                 </div>
             </div>
             <div class="creative-service-container">
-                <div class="creative-service-animate animate__animated">
+                <div  class="animation" data-animation="animate__rotateIn">
                     <img src="./assets/images/sampleCreativeImageTp.png" height="471" />
                 </div>
                 <div class="creative-text-container creative-text-container-left" id="creative-container-1">
@@ -215,9 +224,9 @@
                 <b>خدمات</b> ما
             </p>
             <p class="section-subtitle">چیز هایی که ما بهتر از بقیه انجام می دهیم!</p>
-            <div class="row">
+            <div class="row animation" data-animation="animate__fadeInUp">
                 <div class="col-md-3 col-sm-6">
-                    <div class="service-box animate__animated">
+                    <div class="service-box">
                         <img src="assets/images/sampleService.png" />
                         <p class="service-title">برندینگ و طراحی هویت کمپانی</p>
                         <a class="btn">
@@ -226,7 +235,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="service-box animate__animated">
+                    <div class="service-box">
                         <img src="assets/images/sampleService.png" />
                         <p class="service-title">برندینگ و طراحی هویت کمپانی</p>
                         <a class="btn">
@@ -235,7 +244,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="service-box animate__animated">
+                    <div class="service-box">
                         <img src="assets/images/sampleService.png" />
                         <p class="service-title">برندینگ و طراحی هویت کمپانی</p>
                         <a class="btn">
@@ -244,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="service-box animate__animated">
+                    <div class="service-box">
                         <img src="assets/images/sampleService.png" />
                         <p class="service-title">برندینگ و طراحی هویت کمپانی</p>
                         <a class="btn">
@@ -256,9 +265,9 @@
         </div>
         <div id="venture-container">
             <p class="section-title">ونچر آکادمی هنروما</p>
-            <div class="row">
+            <div class="row animation" data-animation="animate__fadeIn">
                 <div class="col-md-4">
-                    <div class="venture-box animate__animated">
+                    <div class="venture-box">
                         <img src="assets/images/sampleVenture.png" />
                         <p class="venture-title">دستیار</p>
                     </div>
@@ -267,7 +276,7 @@
         </div>
         <div id="portfolio-container" class="container">
             <p class="section-title"><b>نمونه کار ها</b></p>
-            <div class="row animate__animated" id="image-collection">
+            <div class="row animation" data-animation="animate__fadeInUp">
                 <div class="col-md-4">
                     <div class="image-group">
                         <img src="assets/images/portfolio-1.jpg" />
@@ -290,7 +299,7 @@
         </div>
         <div id="trusted-by-container">
             <p class="section-title"><b>اعتماد شده</b> توسط</p>
-            <div id="trusted-by" class="animate__animated">
+            <div id="trusted-by" class="animation" data-animation="animate__slideInLeft">
                 <div class="trusted-group">
                     <img src="./assets/images/turstedsample.png" />
                     <img src="./assets/images/turstedsample.png" />
@@ -310,7 +319,7 @@
         </div>
         <div id="contactus-container" class="container">
             <div class="row">
-                <div id="contact-us-text" class="col-md-6 animate__animated">
+                <div id="contact-us-text" class="col-md-6  animation" data-animation="animate__fadeInLeft">
                     <p class="section-title">
                         <b>ایده ای دارید؟</b>
                         <br />
@@ -320,7 +329,7 @@
                         با ما صحبت کن
                     </a>
                 </div>
-                <div id="contact-us-image" class="col-md-6 animate__animated">
+                <div id="contact-us-image" class="col-md-6 animation" data-animation="animate__fadeInRight">
                     <img src="assets/images/smapleContactUs.png"  />
                 </div>
             </div>
@@ -355,7 +364,6 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mainPage.js"></script>
 
 </body>
 

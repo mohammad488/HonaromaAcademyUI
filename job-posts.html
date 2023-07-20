@@ -21,21 +21,27 @@
             <i class="ri-close-line"></i>
         </button>
         <ul id="mobile-nav-menu">
-            <li>
-                <a href="index.html">
-                    خانه
-                    <div class="underline"></div>
-                </a>
-            </li>
-            <li>
+            <li class="active">
                 <a href="job-posts.html">
                     همکاری با ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
+                <a href="about-us.html">
+                    درباره ما
+                    <div class="underline"></div>
+                </a>
+            </li>
+            <li>
+                <a href="our-team.html">
+                    تیما ما
+                    <div class="underline"></div>
+                </a>
+            </li>
+            <li>
                 <a href="contact-us.html">
-                    خانه
+                    ارتباط با ما
                     <div class="underline"></div>
                 </a>
             </li>
@@ -61,12 +67,15 @@
     </div>
     <div id="page">
         <nav class="animate__animated animate__fadeIn">
-            <img src="assets/images/logo.png" alt="" height="24" />
+            <a href="index.html"><img src="assets/images/logo.png" alt="" height="24" /></a>
             <ul id="nav-menu">
-                <li><a class="nav-link" href="index.html">خانه</a>
+                <li class="active"><a class="nav-link" href="job-posts.html">همکاری با ما</a>
                     <div class="underline"></div>
                 </li>
-                <li class="active"><a class="nav-link" href="job-posts.html">همکاری با ما</a>
+                <li><a class="nav-link" href="about-us.html">درباره ما</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a class="nav-link" href="our-team.html">تیم ما</a>
                     <div class="underline"></div>
                 </li>
                 <li><a class="nav-link" href="contact-us.html">ارتباط با ما</a>
@@ -84,7 +93,7 @@
                     <p class="section-subtitle">Wana started by a group of highly skilled, energetic and young
                         professionals. This youthful energy helps you drive your business to the pinnacle of digital
                         speed, accuracy and quality.</p>
-                    <a class="btn" href="#details-container">
+                    <a class="btn" href="#job-listing">
                         مشاهده شعل ها
                     </a>
                 </div>
@@ -117,14 +126,14 @@
                         purpose (injected humour and the like).
                     </p>
                 </div>
-                <div class="col-md-8 animate__animated" id="details-image">
+                <div class="col-md-8 animation" data-animation="animate__fadeIn" id="details-image">
                     <img src="assets/images/details.jpg" />
                 </div>
             </div>
         </div>
-        <div>
+        <div class="animation" data-animation="animate__fadeIn">
             <!-- Swiper -->
-            <div class="swiper imageSlider">
+            <div dir="ltr" class="swiper imageSlider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="assets/images/details.jpg" />
@@ -145,10 +154,11 @@
                         <img src="assets/images/details.jpg" />
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
-        <div class="job-listing">
+        <div id="job-listing">
             <div class="job-post">
                 <div class="job-title">
                     <i class="ri-add-line"></i>
@@ -175,6 +185,7 @@
                         Excellent negotiation and communication skills.<br> ● Strong verbal and written presentation
                         skills.<br> <br> Employment Type<br> ● Full Time</p>
                     </p>
+                    <a class="btn rounded text-black">Apply Now</a>
                 </div>
             </div>
             <div class="job-post">
@@ -203,6 +214,7 @@
                         Excellent negotiation and communication skills.<br> ● Strong verbal and written presentation
                         skills.<br> <br> Employment Type<br> ● Full Time</p>
                     </p>
+                    <a class="btn rounded text-black">Apply Now</a>
                 </div>
             </div>
             <div class="job-post">
@@ -231,6 +243,7 @@
                         Excellent negotiation and communication skills.<br> ● Strong verbal and written presentation
                         skills.<br> <br> Employment Type<br> ● Full Time</p>
                     </p>
+                    <a class="btn rounded text-black">Apply Now</a>
                 </div>
             </div>
             <div class="job-post">
@@ -259,45 +272,49 @@
                         Excellent negotiation and communication skills.<br> ● Strong verbal and written presentation
                         skills.<br> <br> Employment Type<br> ● Full Time</p>
                     </p>
-
-                    <footer class="container">
-                        <div class="row">
-                            <div class="col-md-6 footer-info-conntainer">
-                                <p class="footer-info"><a href="tel:+989212407856">09212407856</a></p>
-                                <p class="footer-info"><a href="mailto:mhkweb.p@gmail.com">mhkweb.p[at]gmail.com</a></p>
-                                <br />
-                                <p class="footer-info">خیابان شریعتی، خیابان شریعتی، خیابان شریعتی، خیابان شریعتی</p>
-                            </div>
-                            <div class="col-md-6 footer-image">
-                                <img src="assets/images/logo.png" width="175" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="footer-copyright">Copyright © 2021 wana studio . Built with love in Iran All
-                                    Rights
-                                    Reserved. </p>
-                            </div>
-                            <div class="col-md-6 footer-social">
-                                <a href="#"><i class="ri-instagram-line"></i></a>
-                                <a href="#"><i class="ri-twitter-fill"></i></a>
-                                <a href="#"><i class="ri-linkedin-fill"></i></a>
-                            </div>
-                        </div>
-                    </footer>
+                    <a class="btn rounded text-black">Apply Now</a>
                 </div>
+            </div>
+        </div>
 
-                <!-- JS -->
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-6 footer-info-conntainer">
+                    <p class="footer-info"><a href="tel:+989212407856">09212407856</a></p>
+                    <p class="footer-info"><a href="mailto:mhkweb.p@gmail.com">mhkweb.p[at]gmail.com</a></p>
+                    <br />
+                    <p class="footer-info">خیابان شریعتی، خیابان شریعتی، خیابان شریعتی، خیابان شریعتی</p>
+                </div>
+                <div class="col-md-6 footer-image">
+                    <img src="assets/images/logo.png" width="175" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">Copyright © 2021 wana studio . Built with love in Iran All
+                        Rights
+                        Reserved. </p>
+                </div>
+                <div class="col-md-6 footer-social">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-                <script src="assets/js/jquery.min.js"></script>
-                <script src="assets/js/main.js"></script>
-                <script src="assets/js/jobPostsPage.js"></script>
+    <!-- JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-                <script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jobPostsPage.js"></script>
 
-                </script>
+    <script>
+
+    </script>
 
 </body>
 

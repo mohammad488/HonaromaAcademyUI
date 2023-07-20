@@ -1,0 +1,173 @@
+/* Intro */
+#intro-container {
+    display: flex;
+    position: relative;
+    background-color: #7fafff;
+    overflow: hidden;
+    padding: 0;
+}
+
+#intro-container>div {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #intro-container .section-title {
+        font-size: 52px !important;
+    }
+
+    #intro-container>div {
+        justify-content: unset;
+        flex-direction: row;
+    }
+}
+
+#intro-container .section-title {
+    text-align: center;
+    width: 100%;
+}
+
+#intro-container img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.nectar-shape-divider-wrap {
+    -webkit-font-smoothing: antialiased;
+    color: #333333;
+    visibility: visible;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateZ(0);
+    z-index: 50;
+    height: 100%;
+}
+
+.nectar-shape-divider {
+    -webkit-font-smoothing: antialiased;
+    color: #333333;
+    visibility: visible;
+    font: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    fill: #fff;
+    height: 20%;
+}
+
+/* Details */
+#details-container {
+    background-color: #fff;
+}
+
+#details-container>.section-title {
+    text-align: right;
+}
+
+#details-container>.section-subtitle {
+    text-align: justify;
+}
+
+#details-container>.section-title {
+    font-size: 60px !important;
+}
+
+@media (max-width: 992px) {
+    #details-container>.section-title {
+        font-size: 42px !important;
+    }
+}
+
+/* Why Honaroma */
+#why-honaroma>div {
+    align-items: center;
+}
+
+#why-honaroma img {
+    width: 100%;
+}
+
+/* Properties */
+#properties>#imageContainer {
+    text-align: center;
+}
+
+#properties img {
+    height: 70vh;
+}
+
+@media (max-width: 768px) {
+    #properties img {
+        height: unset;
+        width: 100%;
+    }
+}
+
+/* About */
+#about {
+    margin: 5em 0;
+}
+@media (max-width: 768px) {
+    #about {
+        margin: 3em 0 1em 0;
+    }
+}
+
+#about > div{
+    align-items: center;
+}
+
+#about .section-title {
+    text-align: right;
+    font-size: 30px!important;
+}
+
+#about .section-subtitle {
+    text-align: justify;
+    font-size: 20px!important;
+    color: #808080;
+}
+/* Story */
+#story > div{
+    align-items: center;
+}
+#story .section-title {
+    text-align: right;
+    font-size: 30px!important;
+    margin-left: 20px;
+}
+
+#story .section-subtitle {
+    text-align: justify;
+    font-size: 20px!important;
+    color: #808080;
+    margin-left: 20px;
+    line-height: 40px;
+}
+#story img {
+    width: 100%;
+    margin-bottom: 20px;
+}

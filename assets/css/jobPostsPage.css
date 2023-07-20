@@ -4,15 +4,10 @@
   position: relative;
   height: 100vh;
   background-color: #edfdf0;
+  overflow: hidden;
 }
 
-@media (max-width: 576px) {
-  #intro-container {
-    padding: 0 30px;
-  }
-}
-
-#intro-container > div {
+#intro-container>div {
   align-items: center;
 }
 
@@ -28,9 +23,36 @@
   text-align: right;
 }
 
+@media (max-width: 576px) {
+  #intro-container>div {
+    justify-content: start;
+    flex-direction: column;
+  }
+  #intro-container .section-title {
+    font-size: 30px !important;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  #intro-container .section-subtitle {
+    font-size: 20px !important;
+    margin-top: 0;
+  }
+
+  #intro-container {
+    padding: 0 30px;
+  }
+}
+
 #intro-container img {
   width: 100%;
   z-index: 3;
+}
+
+#intro-container .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
 
 .nectar-shape-divider-wrap {
@@ -74,14 +96,8 @@
   display: flex;
 }
 
-#details-container > .row {
+#details-container>.row {
   align-items: center;
-}
-
-@media (max-width: 576px) {
-  #details-container {
-    padding: 0 30px;
-  }
 }
 
 #details-container p {
@@ -122,36 +138,40 @@
   display: block;
   width: 100%;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #e6981c;
 }
-.job-listing {
+
+/* Job Listing */
+#job-listing {
   padding-right: 40px;
   padding-left: 40px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
-.job-listing .job-post {
+#job-listing .job-post {
   background-color: #eee;
   border-radius: 3px;
   border: 1px solid #e2e2e2;
 
-  padding: 20px;
-
+  padding: 12px 10px;
+  cursor: pointer;
   max-height: 32px;
+  transition: 200ms;
   overflow: hidden;
 }
 
-.job-listing .job-post.active {
+#job-listing .job-post.active {
   max-height: fit-content;
 }
 
-.job-listing .job-post .job-title {
+#job-listing .job-post .job-title {
   display: flex;
   flex-direction: row;
 
@@ -159,15 +179,19 @@
   gap: 10px;
 }
 
-.job-listing .job-post .job-title i {
+#job-listing .job-post .job-title i {
   font-size: 20px;
 }
 
-.job-listing .job-post .job-title p {
+#job-listing .job-post .job-title p {
   font-weight: 600;
   font-size: 20px;
   color: #444;
 
   padding: 0px;
   margin: 0px;
+}
+
+#job-listing .job-description {
+  color: #444;
 }

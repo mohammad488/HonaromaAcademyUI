@@ -6,11 +6,34 @@ function isScrolledIntoView(elem) {
     return (elemTop < docViewTop);
 }
 
+if (window.innerWidth > 576) {
+    const animations = document.getElementsByClassName(
+        "animation"
+    );
+    for (let index = 0; index < animations.length; index++) {
+        animations[index].style.opacity = "0";
+    }
+    window.addEventListener("scroll", () => {
+        for (let index = 0; index < animations.length; index++) {
+          if (isScrolledIntoView(animations[index])) {
+            animations[index].style.opacity = "100%";
+            animations[index].classList.add("animate__animated");
+            animations[index].classList.add(animations[index].dataset.animation);
+          }
+        }
+    });
+}
+
 
 let pageContainer = document.getElementById("page");
 let menuExpandBtn = document.getElementById("menuExpand");
 let menuCollapseBtn = document.getElementById("menuCollapse");
 let mobileMenu = document.getElementById("mobileMenu");
+let navigation = document.getElementsByTagName("nav")[0];
+let navWhite = false;
+if(navigation.classList.contains("nav-white")){
+    navWhite = true;
+}
 let scrollUp = document.getElementById("scrollUp");
 
 const pageLoaded = () => {
@@ -62,6 +85,9 @@ window.addEventListener("scroll", () => {
     lastKnownScrollPosition = window.scrollY;
     let navLinks = document.getElementsByClassName("nav-link");
     if (window.scrollY == 0) {
+        if(navWhite){
+            navigation.classList.add("nav-white");
+        }
         document.getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
         for (let index = 0; index < navLinks.length; index++) {
             const element = navLinks[index];
@@ -69,6 +95,9 @@ window.addEventListener("scroll", () => {
         }
     }
     else {
+        if(navWhite){
+            navigation.classList.remove("nav-white");
+        }
         document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffffcf";
         for (let index = 0; index < navLinks.length; index++) {
             const element = navLinks[index];

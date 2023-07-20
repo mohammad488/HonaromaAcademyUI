@@ -890,6 +890,9 @@
 /* Contact Us */
 #contactus-container {
   background-color: #272727;
+}
+
+#contactus-container > div{
   align-items: center;
 }
 
@@ -897,6 +900,7 @@
   color: #e6981c !important;
   margin-bottom: 30px;
   text-align: right;
+  font-size: 52px!important;
 }
 
 @media (max-width: 576px) {
