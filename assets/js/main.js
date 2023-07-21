@@ -91,7 +91,9 @@ window.addEventListener("scroll", () => {
         document.getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
         for (let index = 0; index < navLinks.length; index++) {
             const element = navLinks[index];
-            element.style.color = "#110729ad";
+            if(!element.parentElement.classList.contains("active")){
+                element.style.color = "#110729ad";
+            }
         }
     }
     else {
