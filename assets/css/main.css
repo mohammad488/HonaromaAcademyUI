@@ -335,6 +335,7 @@ nav {
     font-size: 18px;
     font-weight: 500;
     text-align: right;
+    padding-left: 10px;
 }
 
 #side-about>p {

@@ -14,7 +14,7 @@ let jobPosts = document.querySelectorAll("div.job-post");
 
 jobPosts.forEach(function (jobPost) {
   jobPost.addEventListener("click", function () {
-    debugger
+    
     jobPosts.forEach(post => {
       if(post != jobPost){
         post.classList.remove("active");

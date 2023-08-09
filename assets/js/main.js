@@ -15,11 +15,11 @@ if (window.innerWidth > 576) {
     }
     window.addEventListener("scroll", () => {
         for (let index = 0; index < animations.length; index++) {
-          if (isScrolledIntoView(animations[index])) {
-            animations[index].style.opacity = "100%";
-            animations[index].classList.add("animate__animated");
-            animations[index].classList.add(animations[index].dataset.animation);
-          }
+            if (isScrolledIntoView(animations[index])) {
+                animations[index].style.opacity = "100%";
+                animations[index].classList.add("animate__animated");
+                animations[index].classList.add(animations[index].dataset.animation);
+            }
         }
     });
 }
@@ -31,7 +31,7 @@ let menuCollapseBtn = document.getElementById("menuCollapse");
 let mobileMenu = document.getElementById("mobileMenu");
 let navigation = document.getElementsByTagName("nav")[0];
 let navWhite = false;
-if(navigation.classList.contains("nav-white")){
+if (navigation.classList.contains("nav-white")) {
     navWhite = true;
 }
 let scrollUp = document.getElementById("scrollUp");
@@ -82,22 +82,27 @@ menuCollapseBtn.onclick = () => {
 
 let lastKnownScrollPosition = window.scrollY;
 window.addEventListener("scroll", () => {
+    if (window.scrollY > lastKnownScrollPosition) {
+        document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
+    }
+    else {
+        document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
+    }
+
     lastKnownScrollPosition = window.scrollY;
     let navLinks = document.getElementsByClassName("nav-link");
     if (window.scrollY == 0) {
-        if(navWhite){
+        if (navWhite) {
             navigation.classList.add("nav-white");
         }
         document.getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
         for (let index = 0; index < navLinks.length; index++) {
             const element = navLinks[index];
-            if(!element.parentElement.classList.contains("active")){
-                element.style.color = "#110729ad";
-            }
+            element.style.removeProperty("color");
         }
     }
     else {
-        if(navWhite){
+        if (navWhite) {
             navigation.classList.remove("nav-white");
         }
         document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffffcf";

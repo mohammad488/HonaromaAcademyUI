@@ -22,6 +22,7 @@
 .text-color-size {
   color: #6d6d6d;
   font-size: 23px;
+  font-weight: 300!important;
   text-align: center;
 }
 
@@ -29,77 +30,66 @@
   position: absolute;
   left: 249px;
   top: 100px;
-  font-weight: 100 !important;
 }
 
 #intro-text2 {
   position: absolute;
   left: 252px;
   top: 186px;
-  font-weight: 100 !important;
 }
 
 #intro-text3 {
   position: absolute;
   left: 172px;
   top: 328px;
-  font-weight: 100 !important;
 }
 
 #intro-text4 {
   position: absolute;
   left: 591px;
   top: 76px;
-  font-weight: 100 !important;
 }
 
 #intro-text5 {
   position: absolute;
   left: 222px;
   top: 480px;
-  font-weight: 100 !important;
 }
 
 #intro-text6 {
   position: absolute;
   left: 367px;
   top: 601px;
-  font-weight: 100 !important;
 }
 
 #intro-text7 {
   position: absolute;
   left: 991px;
   top: 627px;
-  font-weight: 100 !important;
 }
 
 #intro-text8 {
   position: absolute;
-  left: 1015px;
-  top: 491px;
-  font-weight: 100 !important;
+  left: 1125px;
+  top: 504px;
 }
 
 #intro-text9 {
   position: absolute;
-  left: 1098px;
+  left: 1154px;
   top: 336px;
-  font-weight: 100 !important;
 }
 
 #intro-text10 {
   position: absolute;
-  left: 1098px;
+  left: 1124px;
   top: 192px;
-  font-weight: 100 !important;
 }
 
 #intro-text11 {
   position: absolute;
   left: 932px;
   top: 87px;
-  font-weight: 100 !important;
 }
 
 #orang {

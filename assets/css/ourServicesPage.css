@@ -12,7 +12,7 @@
     height: 50vh;
   }
 
-  #intro-container .section-title {
+  #intro-container .section-subtitle {
     font-size: 20px !important;
   }
 }
@@ -21,6 +21,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 @media (min-width: 768px) {
@@ -28,10 +29,6 @@
     justify-content: unset;
     flex-direction: row;
   }
-}
-
-#intro-container .section-title {
-  text-align: right;
 }
 
 #intro-container img {
@@ -102,6 +99,16 @@
   }
 }
 
+/* Why Honaroma */
+#why-honaroma>div {
+  align-items: center;
+}
+
+#why-honaroma img {
+  width: 100%;
+}
+
+
 /* Image And Text Sctions */
 .imageAndText {
   margin-top: 6rem;
@@ -130,13 +137,17 @@
   .imageAndText {
     margin-top: 0;
   }
-  .imageAndText .section-title{
+
+  .imageAndText .section-title {
     margin-top: 0;
   }
-  .imageAndText .section-title, .imageAndText .section-subtitle{
+
+  .imageAndText .section-title,
+  .imageAndText .section-subtitle {
     line-height: unset;
     text-align: center;
   }
+
   .imageAndText.reverse>div {
     flex-direction: column-reverse;
   }
@@ -154,6 +165,19 @@
 #services {
   margin: 4rem 0;
 }
+#services>.section-title {
+  text-align: right;
+  font-size: 35px !important;
+}
+
+@media (max-width: 768px) {
+  #services>.section-title {
+    font-size: 20px !important;
+  }
+  #services>.section-subtitle {
+    font-size: 20px !important;
+  }
+}
 
 /* Experience */
 #experience>.section-title {
@@ -169,6 +193,7 @@
 #experience .card {
   padding: 10px 70px;
 }
+
 /* Our Products */
 @media (max-width: 768px) {
   #products>.section-title {

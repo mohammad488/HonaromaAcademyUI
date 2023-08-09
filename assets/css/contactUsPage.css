@@ -37,6 +37,7 @@
 #details-container {
   display: flex;
   background-color: #fff;
+  justify-content: center;
 }
 
 #details-container > .row {

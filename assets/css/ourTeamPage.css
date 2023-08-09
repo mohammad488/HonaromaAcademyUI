@@ -152,7 +152,7 @@
     z-index: 3;
 }
 
-.member-card>.overlay:hover {
+.member-card:hover>.overlay {
     opacity: 0;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .member-card>.description>p {
-    text-align: center;
+    text-align: justify!important;
 }
 
 .member-card>.description>.title {
