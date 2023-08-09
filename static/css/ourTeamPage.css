@@ -1,9 +1,9 @@
 /* Intro */
 #intro-container {
     position: relative;
-    background-color: #52c3ff;
+    background-color: #f6a21c;
     overflow: hidden;
-    height: 100vh;
+    height: 70vh;
 }
 
 #intro-container>div {

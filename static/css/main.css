@@ -167,6 +167,10 @@ nav {
     }
 }
 
+nav .logo-container{
+    display: inherit;
+}
+
 #nav-menu {
     display: none;
 }
@@ -237,6 +241,10 @@ nav {
     color: #ffffff !important;
 }
 
+/* Logo */
+.logo{
+    border-radius: 10px;
+}
 
 /* Mobile Nav */
 #mobileMenu {
@@ -418,6 +426,11 @@ footer>.row {
 .footer-social {
     text-align: left;
     margin: 1em 0;
+}
+@media (max-width: 576px) {
+    .footer-social {
+        text-align: right;
+    }
 }
 
 .footer-social>a {
@@ -647,9 +660,16 @@ footer>.row {
 
 /* Background Colors */
 .bg-yellow {
-    background-color: #febd00;
+    background-color: var(--secondary);
+}
+.bg-primary {
+    background-color: var(--primary);
 }
 
+/* Text Colors */
+.text-white{
+    color: #fff!important;
+}
 /* Images */
 .image-fluid {
     max-width: 80%;

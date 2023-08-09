@@ -5,11 +5,19 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest"  href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/ourServicesPage.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ourServicesPage.css') }}" />
     <title>آکادمی هنروما</title>
 </head>
 
@@ -22,19 +30,19 @@
         <ul id="mobile-nav-menu">
 
             <li>
-                <a href="about-us.html">
+                <a href="{{url_for('aboutus') }}">
                     داستان ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="our-team.html">
-                    تیما ما
+                <a href="{{url_for('ourteam') }}">
+                    تیم ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="contact-us.html">
+                <a href="{{url_for('contactus') }}">
                     ارتباط با ما
                     <div class="underline"></div>
                 </a>
@@ -51,7 +59,7 @@
         <div id="side-social">
             <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i
                     class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-telegram-line"></i></a>
+            
         </div>
     </div>
     <!-- Scroll Up Btn -->
@@ -60,20 +68,20 @@
     </button>
 
     <div id="loader" class="animate__animated">
-        <img src="assets/images/animation_300_ljxy19op.gif" width="300" />
+        <img src="/static/images/animation_300_ljxy19op.gif" width="300" />
     </div>
     <div id="page">
         <nav class="animate__animated animate__fadeIn">
-            <a href="index.html"><img src="assets/images/logo.png" alt="" height="24" /></a>
+            <a href="{{url_for('home') }}"><img class="logo" src="/static/images/honaroma.jpg" alt="" height="50" /></a>
             <ul id="nav-menu">
 
-                <li><a class="nav-link" href="about-us.html">داستان ما</a>
+                <li><a class="nav-link" href="{{url_for('aboutus') }}">داستان ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="our-team.html">تیم ما</a>
+                <li><a class="nav-link" href="{{url_for('ourteam') }}">تیم ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="contact-us.html">ارتباط با ما</a>
+                <li><a class="nav-link" href="{{url_for('contactus') }}">ارتباط با ما</a>
                     <div class="underline"></div>
                 </li>
             </ul>
@@ -94,7 +102,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-none d-md-block animate__animated animate__zoomIn animate__delay-1s">
-                    <img src="assets/images/WANAAAA5-2.png" width="844" />
+                    <img src="/static/images/WANAAAA5-2.png" width="844" />
                 </div>
             </div>
             <div class="nectar-shape-divider-wrap no-color " style=" height:50px;" data-front="" data-style="curve_asym"
@@ -106,7 +114,7 @@
         <div class="container imageAndText">
             <div class="row">
                 <div class="col-md-4 animation" data-animation="animate__fadeInRight">
-                    <img src="assets/images/site-edit10-1.png" />
+                    <img src="/static/images/site-edit10-1.png" />
                 </div>
                 <div class="col-md-8 animation" data-animation="animate__fadeInLeft">
                     <p class="section-title">
@@ -127,7 +135,7 @@
                     <p class="section-title">
                         <b>دوره های <span class="text-primary">هنروما</span></b>
                         <img class="d-none d-md-block animate__animated" id="why-honaroma-image"
-                            src="assets/images/3ta.png" />
+                            src="/static/images/3ta.png" />
                     </p>
                 </div>
                 <div class="col-lg-4">
@@ -194,7 +202,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 animation" data-animation="animate__fadeInLeft">
-                    <img src="assets/images/ddd5-1.png" />
+                    <img src="/static/images/ddd5-1.png" />
                 </div>
             </div>
         </div>
@@ -202,7 +210,7 @@
             <div class="row">
 
                 <div class="col-md-4 animation" data-animation="animate__fadeInRight">
-                    <img src="assets/images/3ta.png" />
+                    <img src="/static/images/3ta.png" />
                 </div>
                 <div class="col-md-8 animation" data-animation="animate__fadeInLeft">
                     <p class="section-title">
@@ -300,7 +308,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 animation" data-animation="animate__fadeInLeft">
-                    <img src="assets/images/ddd7.png" />
+                    <img src="/static/images/ddd7.png" />
                 </div>
             </div>
         </div>
@@ -319,7 +327,7 @@
                             We are Expert!
                         </div>
                         <div class="card-image pt-1">
-                            <img src="assets/images/boghcheh.png" />
+                            <img src="/static/images/boghcheh.png" />
                         </div>
                     </div>
                 </div>
@@ -329,7 +337,7 @@
                             We are Expert!
                         </div>
                         <div class="card-image pt-1">
-                            <img src="assets/images/ddd6.png" />
+                            <img src="/static/images/ddd6.png" />
                         </div>
                     </div>
                 </div>
@@ -339,14 +347,14 @@
                             We are Expert!
                         </div>
                         <div class="card-image pt-1">
-                            <img src="assets/images/boghcheh.png" />
+                            <img src="/static/images/boghcheh.png" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container text-center d-none d-md-block  animation" data-animation="animate__fadeIn">
-            <img class="image-fluid" src="assets/images/wana-site-08.png" />
+            <img class="image-fluid" src="/static/images/wana-site-08.png" />
         </div>
         <div id="products" class="container mt-2">
             <p class="section-title text-right">
@@ -382,7 +390,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 footer-image">
-                    <img src="assets/images/logo.png" width="175" />
+                    <img src="/static/images/honaroma.jpg" width="175" class="logo" />
                 </div>
             </div>
             <div class="row">
@@ -397,8 +405,8 @@
     </div>
 
     <!-- JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
     <script>
 

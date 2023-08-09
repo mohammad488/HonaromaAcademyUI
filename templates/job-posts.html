@@ -5,12 +5,20 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest"  href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/jobPostsPage.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jobPostsPage.css') }}" />
     <title>آکادمی هنروما</title>
 </head>
 
@@ -28,19 +36,19 @@
                 </a>
             </li>
             <li>
-                <a href="about-us.html">
+                <a href="{{url_for('aboutus') }}">
                     داستان ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="our-team.html">
-                    تیما ما
+                <a href="{{url_for('ourteam') }}">
+                    تیم ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="contact-us.html">
+                <a href="{{url_for('contactus') }}">
                     ارتباط با ما
                     <div class="underline"></div>
                 </a>
@@ -56,7 +64,7 @@
         </div>
         <div id="side-social">
             <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-telegram-line"></i></a>
+            
         </div>
     </div>
     <!-- Scroll Up Btn -->
@@ -65,22 +73,22 @@
     </button>
 
     <div id="loader" class="animate__animated">
-        <img src="assets/images/animation_300_ljxy19op.gif" width="300" />
+        <img src="/static/images/animation_300_ljxy19op.gif" width="300" />
     </div>
     <div id="page">
         <nav class="animate__animated animate__fadeIn">
-            <a href="index.html"><img src="assets/images/logo.png" alt="" height="24" /></a>
+            <a href="{{url_for('home') }}"><img class="logo" src="/static/images/honaroma.jpg" alt="" height="50" /></a>
             <ul id="nav-menu">
                 <li class="active"><a class="nav-link" href="job-posts.html">همکاری با ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="about-us.html">داستان ما</a>
+                <li><a class="nav-link" href="{{url_for('aboutus') }}">داستان ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="our-team.html">تیم ما</a>
+                <li><a class="nav-link" href="{{url_for('ourteam') }}">تیم ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="contact-us.html">ارتباط با ما</a>
+                <li><a class="nav-link" href="{{url_for('contactus') }}">ارتباط با ما</a>
                     <div class="underline"></div>
                 </li>
             </ul>
@@ -100,7 +108,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 animate__animated animate__fadeIn animate__delay-1s">
-                    <img src="assets/images/jobPosts.png" width="844" />
+                    <img src="/static/images/jobPosts.png" width="844" />
                 </div>
             </div>
             <div class="nectar-shape-divider-wrap no-color">
@@ -129,7 +137,7 @@
                     </p>
                 </div>
                 <div class="col-md-8 animation" data-animation="animate__fadeIn" id="details-image">
-                    <img src="assets/images/details.jpg" />
+                    <img src="/static/images/details.jpg" />
                 </div>
             </div>
         </div>
@@ -138,22 +146,22 @@
             <div dir="ltr" class="swiper imageSlider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/details.jpg" />
+                        <img src="/static/images/details.jpg" />
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -289,7 +297,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 footer-image">
-                    <img src="assets/images/logo.png" width="175" />
+                    <img src="/static/images/honaroma.jpg" width="175" class="logo" />
                 </div>
             </div>
             <div class="row">
@@ -308,9 +316,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/jobPostsPage.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="/static/js/jobPostsPage.js"></script>
 
     <script>
 

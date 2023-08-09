@@ -5,11 +5,27 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest"  href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest"  href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/mainPage.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainPage.css') }}">
     <title>آکادمی هنروما</title>
 </head>
 
@@ -22,19 +38,19 @@
         <ul id="mobile-nav-menu">
 
             <li>
-                <a href="about-us.html">
+                <a href="{{url_for('aboutus') }}">
                     داستان ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="our-team.html">
-                    تیما ما
+                <a href="{{url_for('ourteam') }}">
+                    تیم ما
                     <div class="underline"></div>
                 </a>
             </li>
             <li>
-                <a href="contact-us.html">
+                <a href="{{url_for('contactus') }}">
                     ارتباط با ما
                     <div class="underline"></div>
                 </a>
@@ -51,7 +67,7 @@
         <div id="side-social">
             <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i
                     class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-telegram-line"></i></a>
+
         </div>
     </div>
     <!-- Scroll Up Btn -->
@@ -60,20 +76,20 @@
     </button>
 
     <div id="loader" class="animate__animated">
-        <img src="assets/images/animation_300_ljxy19op.gif" width="300" />
+        <img src="/static/images/animation_300_ljxy19op.gif" width="300" />
     </div>
     <div id="page">
         <nav class="animate__animated animate__fadeIn">
-            <a href="index.html"><img src="assets/images/logo.png" alt="" height="24" /></a>
+            <a href="{{url_for('home') }}" class="logo-container"><img class="logo" src="/static/images/honaroma.jpg" alt="" height="50" /></a>
             <ul id="nav-menu">
 
-                <li><a class="nav-link" href="about-us.html">داستان ما</a>
+                <li><a class="nav-link" href="{{url_for('aboutus') }}">داستان ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="our-team.html">تیم ما</a>
+                <li><a class="nav-link" href="{{url_for('ourteam') }}">تیم ما</a>
                     <div class="underline"></div>
                 </li>
-                <li><a class="nav-link" href="contact-us.html">ارتباط با ما</a>
+                <li><a class="nav-link" href="{{url_for('contactus') }}">ارتباط با ما</a>
                     <div class="underline"></div>
                 </li>
             </ul>
@@ -147,7 +163,7 @@
                     <span>یه هنر بباره</span>
                 </div>
                 <div class="mt-2">
-                    <a href="student-services.html">
+                    <a href="{{url_for('studentservice') }}">
                         <button id="intro-btn">
                             چطوری؟
                         </button>
@@ -167,7 +183,7 @@
         <div id="creative-services-container">
             <div class="creative-service-container creative-service-container-reverse">
                 <div class="animation" data-animation="animate__rotateIn">
-                    <img src="./assets/images/sampleCreativeImageTp.png" height="471" />
+                    <img src="./static/images/sampleCreativeImageTp.png" height="471" />
                 </div>
                 <div class="creative-text-container creative-text-container-left" id="creative-container-1">
                     <p class="creative-title-secondry">اگر هنوز متوجه نشدی:
@@ -193,27 +209,27 @@
             <div class="row animation" data-animation="animate__fadeInUp">
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="assets/images/sampleService.png" />
+                        <img src="/static/images/sampleService.png" />
                         <p class="service-title">اگر دانش آموزی</p>
-                        <a class="btn"  href="student-services.html">
+                        <a class="btn" href="{{url_for('studentservice') }}">
                             اینجا کلیک کن
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="assets/images/sampleService.png" />
+                        <img src="/static/images/sampleService.png" />
                         <p class="service-title">اگر معلّمی</p>
-                        <a class="btn" href="teacher-services.html">
+                        <a class="btn" href="{{url_for('teacherservice') }}">
                             اینجا کلیک کن
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="assets/images/sampleService.png" />
+                        <img src="/static/images/sampleService.png" />
                         <p class="service-title">اگر مدرسه یا سازمانی</p>
-                        <a class="btn" href="schools-services.html">
+                        <a class="btn" href="{{url_for('schoolservice') }}">
                             اینجا کلیک کن
                         </a>
                     </div>
@@ -225,7 +241,7 @@
             <div class="row animation" data-animation="animate__fadeIn">
                 <div class="col-md-4">
                     <div class="venture-box">
-                        <img src="assets/images/sampleVenture.png" />
+                        <img src="/static/images/sampleVenture.png" />
                         <p class="venture-title">دستیار</p>
                     </div>
                 </div>
@@ -242,7 +258,7 @@
                     </a>
                 </div>
                 <div id="contact-us-image" class="col-md-6 animation" data-animation="animate__fadeInRight">
-                    <img src="assets/images/smapleContactUs.png" />
+                    <img src="/static/images/smapleContactUs.png" />
                 </div>
             </div>
         </div>
@@ -257,7 +273,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 footer-image">
-                    <img src="assets/images/logo.png" width="175" />
+                    <img src="/static/images/honaroma.jpg" width="175" class="logo" />
                 </div>
             </div>
             <div class="row">
@@ -272,9 +288,8 @@
     </div>
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 

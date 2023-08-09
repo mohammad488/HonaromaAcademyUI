@@ -879,7 +879,7 @@
 
 /* Contact Us */
 #contactus-container {
-  background-color: #272727;
+  background-color: var(--primary);
 }
 
 #contactus-container > div{
