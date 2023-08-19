@@ -124,11 +124,12 @@
 .contact-fields form textarea {
   outline: none;
   border: none;
+  border-radius: 10px;
 
   background-color: rgba(0, 0, 0, 0.035);
   border-bottom: 2px solid #e0e0e0;
 
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   padding-bottom: 5px;
   padding-right: 15px;
@@ -139,6 +140,7 @@
 
 .contact-fields form textarea {
   width: 395px;
+  border-radius: 10px;
 }
 
 .contact-fields form input[type="text"]:focus,
@@ -148,6 +150,7 @@
 }
 
 .contact-fields form button {
+  border-radius: 10px;
   display: block;
   width: fit-content;
   cursor: pointer;

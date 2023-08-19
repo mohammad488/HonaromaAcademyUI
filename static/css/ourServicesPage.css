@@ -216,3 +216,34 @@
     font-size: 29px !important;
   }
 }
+
+/* Video Container */
+#video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#video-container video{
+  border-radius: 10px;
+  width: 700px;
+  max-width: 100%;
+}
+/* Portfolio */
+#portfolio-container {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  #portfolio-container {
+    padding: 0 90px;
+  }
+}
+
+.image-group {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.image-group>img {
+  width: 100%;
+}

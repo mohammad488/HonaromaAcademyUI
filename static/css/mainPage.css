@@ -230,10 +230,9 @@
 #intro-btn {
   width: 245px;
   height: 67px;
-  border-radius: 0 !important;
   cursor: pointer;
   background: #e6981c;
-  border-radius: px;
+  border-radius: 10px;
   font-size: 40px;
   font-weight: 900;
   border-style: none;
@@ -627,7 +626,6 @@
   justify-content: center;
   align-items: center;
   max-width: 1100px;
-  margin-bottom: 100px;
 }
 
 .creative-service-container-reverse {
@@ -729,7 +727,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 
 #why-honaroma>h3 {
@@ -845,7 +843,7 @@
 .service-box>.btn {
   font-size: 14px;
   font-weight: 800;
-  padding: 8px 12px;
+  padding: 12px 18px;
 }
 
 /* Venture */

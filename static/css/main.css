@@ -406,6 +406,11 @@ footer>.row {
     color: #b2b2b2;
 }
 
+.social img{
+    width: 30px;
+    padding: 0 2px;
+}
+
 .footer-image {
     text-align: left;
 }
@@ -441,6 +446,7 @@ footer>.row {
 
 /* Button */
 .btn {
+    border-radius: 10px;
     display: block;
     width: fit-content;
     cursor: pointer;
@@ -571,7 +577,7 @@ footer>.row {
 /* Card */
 
 .card {
-    padding: 16.4px;
+    padding: 24.4px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08), 0 13px 45px rgba(0, 0, 0, 0.08);
     margin: 18px 10px;
     border-radius: 20px;
@@ -589,7 +595,7 @@ footer>.row {
 .card .title {
     font-size: 25px;
     color: #333333;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
     font-weight: bold;
 }
 

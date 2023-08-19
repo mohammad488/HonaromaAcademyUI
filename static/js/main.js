@@ -37,8 +37,11 @@ if (navigation.classList.contains("nav-white")) {
 let scrollUp = document.getElementById("scrollUp");
 
 const pageLoaded = () => {
-    document.getElementById("loader").classList.add("animate__fadeOut");
-    document.getElementById("loader").style.zIndex = "-1";
+    document.getElementById("loader").children[0].style.visiblity = "hidden";
+    setTimeout(() => {
+        document.getElementById("loader").classList.add("animate__fadeOut");
+        document.getElementById("loader").style.zIndex = "-1";
+    }, 100);
 };
 
 scrollUp.onclick = () => {

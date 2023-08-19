@@ -65,7 +65,6 @@
             </li>
         </ul>
         <div id="side-about">
-            درباره آکادمی هنروما
             <p>تهران،<br> خیابان کریمخان، خیابان سنایی، خیابان جوادزاده غربی( هشتم غربی)، پلاک
                 ۳، خانه هنروما
             </p>
@@ -192,14 +191,16 @@
         <div id="creative-services-container">
             <div class="creative-service-container creative-service-container-reverse">
                 <div class="animation" data-animation="animate__rotateIn">
-                    <img src="./static/images/sampleCreativeImageTp.png" height="471" />
+                    <img src="./static/images/B61624D5-B1C0-4085-8BDC-4C01EF412039.png" height="471" />
                 </div>
                 <div class="creative-text-container creative-text-container-left" id="creative-container-1">
-                    <!-- <p class="creative-title-secondry">اگر هنوز متوجه نشدی:</p>
-                    <p class="creative-title-small">وقتشه که سریع دست به کار بشی!</p> -->
-                    <p class="creative-description-secondry">ما توی آکادمی هنروما یه بخشی داریم که مخصوص ایجاد تجربه های جدید هنریه به اسم هوم. توی هوم ما برای شما رویداد های حضوری ای رو تجربه میکنیم که علاوه بر اینکه مهارتهای به درد بخور یاد میگیرید، در کنارش یه تجربه ی جدید و متفاوتی رو هم کسب میکنید که میتونه خیلی توی این زندگی دیجیتالی و ماشینی ، حالتونو خوب کنه. از تجربه ی ساخت استاپ موشن خمیری گرفته تا میسولوزی و ساخت طعم های جدید توی نوشیدنی. هوم اینجاس که کنار هم این حال خوبو تجربه کنیم و یه آخر هفته ی هنری داشته باشیم.</p>
-                    <a class="creative-link btn">
-                        معرفی بخش هوم
+                    <!-- <p class="creative-title-secondry">هووم تجربه یک سفر هنری!</p> -->
+                    <p class="creative-title-small">هووم تجربه یک سفر هنری!</p>
+                    <p class="creative-description-secondry">درون توست اگر خلوتی و انجمنی است
+                        <br />
+                        برون ز خویش کجا می‌روی؟ هنر اینجاست...</p>
+                    <a class="creative-link btn" href="{{url_for('hoomservice') }}">
+                        آغاز سفر
                     </a>
                 </div>
             </div>
@@ -216,7 +217,7 @@
             <div class="row animation" data-animation="animate__fadeInUp">
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="/static/images/sampleService.png" />
+                        <img height="250" src="/static/images/487A4B2F-4756-496D-B219-47ED61ED1815.png" />
                         <p class="service-title">اگر دانش آموزی...</p>
                         <a class="btn" href="{{url_for('studentservice') }}">
                             اینجا کلیک کن
@@ -225,7 +226,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="/static/images/sampleService.png" />
+                        <img height="250" src="/static/images/2E0B9A20-5501-441F-A806-89655504D174.png" />
                         <p class="service-title">اگر معلّمی...</p>
                         <a class="btn" href="{{url_for('teacherservice') }}">
                             اینجا کلیک کن
@@ -234,7 +235,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
-                        <img src="/static/images/sampleService.png" />
+                        <img height="250" src="/static/images/D57697EB-0EB5-4F4F-8E8D-75287B7B9386.png" />
                         <p class="service-title">اگر مدرسه یا سازمانی...</p>
                         <a class="btn" href="{{url_for('schoolservice') }}">
                             اینجا کلیک کن
@@ -273,7 +274,7 @@
                 <div class="col-md-4">
                     <div class="venture-box">
                         <img height="150" src="/static/images/download.jpeg" />
-                        <p class="venture-title">????</p>
+                        <p class="venture-title">هنروما</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -301,15 +302,25 @@
         </div>
         <footer class="container">
             <div class="row">
-                <div class="col-md-6 footer-info-conntainer">
-                    <p class="footer-info">تلگرام، بله و ایتا: @Honaroma_ad</p>
+                <div class="col-md-8 footer-info-conntainer">
+                    <p class="footer-info social">
+                        <a href="https://t.me/Honaroma_ad">
+                            <img src="/static/images/Telegram_logo.svg.webp" />
+                        </a>
+                        <a href="https://ble.ir/Honaroma_ad">
+                            <img src="/static/images/bale.jpg" />
+                        </a>
+                        <a href="https://eitaa.com/honaroma_ad">
+                            <img src="/static/images/Eitaa-vector-logo.png" />
+                        </a>
+                    </p>
                     <br />
                     <p class="footer-info">تهران،<br /> خیابان کریمخان، خیابان سنایی، خیابان جوادزاده غربی( هشتم غربی)،
                         پلاک
                         ۳، خانه هنروما
                     </p>
                 </div>
-                <div class="col-md-6 footer-image">
+                <div class="col-md-4 footer-image">
                     <img src="/static/images/honaroma.jpg" width="175" class="logo" />
                 </div>
             </div>
