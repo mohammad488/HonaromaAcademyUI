@@ -27,7 +27,7 @@ def contactus():
         name = request.form['name']
         phone = request.form['phone']
         message = request.form['message']
-        msg = Message(f'یک پیام از طرف {name}', sender = 'honaromacontactus@gmail.com', recipients = ['honaromacontactus@gmail.com'])
+        msg = Message(f'یک پیام از طرف {name}', sender = 'honaromacontactus@gmail.com', recipients = ['honaromacontactus@gmail.com', 'honaroma.academy@gmail.com'])
         msg.html = """
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -231,7 +231,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
       
-      <img align="center" border="0" https://honaromaacademy.pythonanywhere.com/static/images/image-1.png" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
+      <img align="center" border="0" src="https://honaromaacademy.pythonanywhere.com/static/images/email/image-1.png" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
       
     </td>
   </tr>
@@ -273,8 +273,8 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
-      <a href="http://honaromaacademy.pythonanywhere.com" target="_blank">
-      <img align="center" border="0" src="http://honaromaacademy.pythonanywhere.com/static/images/honaroma.jpg" alt="Logo" title="Logo" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 116px;" width="116" class="v-src-width v-src-max-width"/>
+      <a href="https://honaromaacademy.pythonanywhere.com" target="_blank">
+      <img align="center" border="0" src="https://honaromaacademy.pythonanywhere.com/static/images/honaroma.jpg" alt="Logo" title="Logo" style="border-radius: 10px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 116px;" width="116" class="v-src-width v-src-max-width"/>
       </a>
     </td>
   </tr>
@@ -294,7 +294,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
       
-      <img align="center" border="0" https://honaromaacademy.pythonanywhere.com/static/images/image-5.jpeg" alt="Hero Image" title="Hero Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
+      <img align="center" border="0" src="https://honaromaacademy.pythonanywhere.com/static/images/email/image-5.jpeg" alt="Hero Image" title="Hero Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
       
     </td>
   </tr>
@@ -438,7 +438,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
       
-      <img align="center" border="0" https://honaromaacademy.pythonanywhere.com/static/images/image-2.jpeg" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
+      <img align="center" border="0" src="https://honaromaacademy.pythonanywhere.com/static/images/email/image-2.jpeg" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
       
     </td>
   </tr>
@@ -501,7 +501,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
       
-      <img align="center" border="0" https://honaromaacademy.pythonanywhere.com/static/images/image-3.png" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
+      <img align="center" border="0" src="https://honaromaacademy.pythonanywhere.com/static/images/email/image-3.png" alt="border" title="border" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;" width="600" class="v-src-width v-src-max-width"/>
       
     </td>
   </tr>
@@ -588,7 +588,7 @@ def ourteam():
 
 @app.route("/services/schools")
 def schoolservice():
-    return render_template("schools-services.html")
+    return render_template("school-services.html")
 
 @app.route("/services/students")
 def studentservice():
@@ -596,4 +596,8 @@ def studentservice():
 
 @app.route("/services/teachers")
 def teacherservice():
-    return render_template("teachers-services.html")
+    return render_template("teacher-services.html")
+
+@app.route("/services/hoom")
+def hoomservice():
+    return render_template("hoom-services.html")

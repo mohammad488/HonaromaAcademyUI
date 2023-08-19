@@ -6,11 +6,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
-    <link rel="manifest"  href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
-    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/favicons/safari-pinned-tab.svg') }}"
+        color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- CSS -->
@@ -18,7 +22,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/remixicon.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ourTeamPage.css') }}" />
-    <title>آکادمی هنروما</title>
+    <title>آکادمی هنروما | تیم ما</title>
 </head>
 
 <body onload="pageLoaded()">
@@ -28,7 +32,7 @@
             <i class="ri-close-line"></i>
         </button>
         <ul id="mobile-nav-menu">
-            
+
             <li>
                 <a href="{{url_for('aboutus') }}">
                     داستان ما
@@ -51,14 +55,15 @@
         <div id="side-about">
             درباره آکادمی هنروما
             <p>تهران،<br> خیابان کریمخان، خیابان سنایی، خیابان جوادزاده غربی( هشتم غربی)، پلاک
-                        ۳، خانه هنروما
-</p>
-            
-                    <p>تلگرام، بله و ایتا: @Honaroma_ad</p>
+                ۳، خانه هنروما
+            </p>
+
+            <p>تلگرام، بله و ایتا: @Honaroma_ad</p>
         </div>
         <div id="side-social">
-            <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i class="ri-instagram-line"></i></a>
-            
+            <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i
+                    class="ri-instagram-line"></i></a>
+
         </div>
     </div>
     <!-- Scroll Up Btn -->
@@ -73,7 +78,7 @@
         <nav class="animate__animated animate__fadeIn nav-white">
             <a href="{{url_for('home') }}"><img class="logo" src="/static/images/honaroma.jpg" alt="" height="50" /></a>
             <ul id="nav-menu">
-                
+
                 <li><a class="nav-link" href="{{url_for('aboutus') }}">داستان ما</a>
                     <div class="underline"></div>
                 </li>
@@ -134,7 +139,10 @@
                             نیلوفر جعفری
                         </div>
                         <div class="description text-center">
-                            ایشون مدیر ماست. حواسش هست که همه چی سر جاش باشه و کارها به بهترین شکل پیش بره. از مزیت های حضور نیلوفر در تیم اینه که کلی غذاهای خوشمزه میخوری! چون هربار که میاد یه دسر و غذای جدید رو میکنه. نیلوفر علوم سیاسی خونده شاید واسه همین گاهی خیلی جدی میشه. ولی خب دلش خیلی مهربونه و هوای تیم آکادمی هنروما رو داره
+                            ایشون مدیر ماست. حواسش هست که همه چی سر جاش باشه و کارها به بهترین شکل پیش بره. از مزیت های
+                            حضور نیلوفر در تیم اینه که کلی غذاهای خوشمزه میخوری! چون هربار که میاد یه دسر و غذای جدید رو
+                            میکنه. نیلوفر علوم سیاسی خونده شاید واسه همین گاهی خیلی جدی میشه. ولی خب دلش خیلی مهربونه و
+                            هوای تیم آکادمی هنروما رو داره
                         </div>
                     </div>
                 </div>
@@ -147,7 +155,11 @@
                             ماهور محمدی
                         </div>
                         <div class="description text-center">
-                            ما بهش میگیم ماهی. ماهی معماری خونده و یه تصویر ساز هنرمنده. ماهور دیزاینر ماست. کار ماهور خوشگلاسیون آکادمی ه. یعنی از دیزاین اتاق گرفته، تا پست های فضای مجازی و همه طرح های ما رو خوشگل میکنه. علاوه بر این ماهور اسکرام مستر ماهم هست. حواسش به اینه که کارها به درستی تعریف بشن و سر موقع انجام بگیرن. از مزیت های ماهور اینه که تو هر تیمی بره با خودش حس همدلی رو هم میبره. واسه همینه که تیم آکادمی هنروما خیلی با هم همدل هستن
+                            ما بهش میگیم ماهی. ماهی معماری خونده و یه تصویر ساز هنرمنده. ماهور دیزاینر ماست. کار ماهور
+                            خوشگلاسیون آکادمی ه. یعنی از دیزاین اتاق گرفته، تا پست های فضای مجازی و همه طرح های ما رو
+                            خوشگل میکنه. علاوه بر این ماهور اسکرام مستر ماهم هست. حواسش به اینه که کارها به درستی تعریف
+                            بشن و سر موقع انجام بگیرن. از مزیت های ماهور اینه که تو هر تیمی بره با خودش حس همدلی رو هم
+                            میبره. واسه همینه که تیم آکادمی هنروما خیلی با هم همدل هستن
                         </div>
                     </div>
                 </div>
@@ -160,7 +172,10 @@
                             محمد کریمی
                         </div>
                         <div class="description text-center">
-                            محمد و ما ادراک محمد! یه اهل سفر. یه عکاس. یه معلم هنر. محمد معلمی معماری خونده. اون همه زندگی ش رو صرف آموزش هنر به بقیه کرده. جالبه بدونید همسر محمد هم همین کار رو کرده و ایشونم هنر درس میده. محمد مسئول آموزش آکادمی هنروماست. واسه همین همه آموزش های آکادمی یدور از زیر دست محمد رد میشه
+                            محمد و ما ادراک محمد! یه اهل سفر. یه عکاس. یه معلم هنر. محمد معلمی معماری خونده. اون همه
+                            زندگی ش رو صرف آموزش هنر به بقیه کرده. جالبه بدونید همسر محمد هم همین کار رو کرده و ایشونم
+                            هنر درس میده. محمد مسئول آموزش آکادمی هنروماست. واسه همین همه آموزش های آکادمی یدور از زیر
+                            دست محمد رد میشه
 
                         </div>
                     </div>
@@ -225,7 +240,8 @@
                 <div class="col-md-6 footer-info-conntainer">
                     <p class="footer-info">تلگرام، بله و ایتا: @Honaroma_ad</p>
                     <br />
-                    <p class="footer-info">تهران،<br /> خیابان کریمخان، خیابان سنایی، خیابان جوادزاده غربی( هشتم غربی)، پلاک
+                    <p class="footer-info">تهران،<br /> خیابان کریمخان، خیابان سنایی، خیابان جوادزاده غربی( هشتم غربی)،
+                        پلاک
                         ۳، خانه هنروما
                     </p>
                 </div>
@@ -235,11 +251,14 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="footer-copyright">تمام حقوق این سایت برای آکادمی هنروما محفوظ است.</p>
+                    <p class="footer-copyright">تمام حقوق این سایت برای آکادمی هنروما محفوظ است.
+                        <span style="font-size: 12px;"> - طراحی شده توسط محمد حاجی کندی و ایلیا سلیمانی</span>
+                    </p>
                 </div>
                 <div class="col-md-6 footer-social">
-                    <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i class="ri-instagram-line"></i></a>
-            </div>
+                    <a href="https://instagram.com/honaroma_academy?igshid=MzRlODBiNWFlZA=="><i
+                            class="ri-instagram-line"></i></a>
+                </div>
         </footer>
     </div>
 

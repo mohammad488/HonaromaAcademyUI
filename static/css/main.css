@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Vazirmatn';
-    src: url('../fonts/Vazirmatn[wght].ttf') format('woff2 supports variations'),
-        url('../fonts/Vazirmatn[wght].ttf') format('woff2-variations');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-
+@import url(../fontiran.css);
 :root {
     --primary: #110729;
     --secondary: #e6981c;
@@ -15,12 +7,12 @@
 
 
 * {
-    font-family: Vazirmatn;
+    font-family: iransansdn;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Vazirmatn;
+    font-family: iransansdn;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -644,6 +636,10 @@ footer>.row {
 
 .mb-2 {
     margin-bottom: 2em !important;
+}
+
+.mb-3 {
+    margin-bottom: 3em !important;
 }
 
 .mt-1 {

@@ -117,12 +117,19 @@
 .imageAndText>div {
   align-items: center;
 }
-.imageAndText>div>div.col-md-8{
+
+.imageAndText>div>div.col-md-8 {
   justify-content: center;
   opacity: 1;
   height: 400px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .imageAndText>div>div.col-md-8 {
+    height: auto;
+  }
 }
 
 .imageAndText img {
@@ -172,6 +179,7 @@
 #services {
   margin: 4rem 0;
 }
+
 #services>.section-title {
   text-align: right;
   font-size: 35px !important;
@@ -181,6 +189,7 @@
   #services>.section-title {
     font-size: 20px !important;
   }
+
   #services>.section-subtitle {
     font-size: 20px !important;
   }
