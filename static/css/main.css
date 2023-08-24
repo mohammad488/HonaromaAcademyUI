@@ -13,7 +13,7 @@
 
 body {
     font-family: iransansdn;
-    font-weight: 400;
+    font-weight: normal;
     margin: 0;
     padding: 0;
     transition: 200ms;
@@ -307,7 +307,7 @@ nav .logo-container{
 
 #mobile-nav-menu>li>a {
     color: #fff;
-    font-weight: 500;
+    font-weight: normal;
     text-decoration: none;
     display: inline-block;
 }
@@ -333,7 +333,7 @@ nav .logo-container{
 
 #side-about {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: normal;
     text-align: right;
     padding-left: 10px;
 }
@@ -406,6 +406,10 @@ footer>.row {
     color: #b2b2b2;
 }
 
+.social a {
+    text-decoration: none;
+}
+
 .social img{
     width: 30px;
     padding: 0 2px;
@@ -460,7 +464,7 @@ footer>.row {
     text-decoration: none;
     position: relative;
     bottom: 0;
-    font-weight: 900;
+    font-weight: bold;
     transition: 200ms;
 }
 
@@ -473,14 +477,14 @@ footer>.row {
 
 .section-title {
     font-size: 42px !important;
-    font-weight: 400;
+    font-weight: normal;
     color: #110828;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .section-title-2 {
-    font-weight: 400 !important;
+    font-weight: normal !important;
     font-size: 30px !important;
 }
 
@@ -509,7 +513,7 @@ footer>.row {
 }
 
 .section-title b {
-    font-weight: 800;
+    font-weight: bold;
 }
 
 /* Colors */
@@ -545,7 +549,7 @@ footer>.row {
 /* Text Link */
 .text-link {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 /* Rounded */

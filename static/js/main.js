@@ -35,7 +35,6 @@ if (navigation.classList.contains("nav-white")) {
     navWhite = true;
 }
 let scrollUp = document.getElementById("scrollUp");
-
 const pageLoaded = () => {
     document.getElementById("loader").children[0].style.visiblity = "hidden";
     setTimeout(() => {
@@ -83,8 +82,9 @@ menuCollapseBtn.onclick = () => {
     }, 500);
 };
 
-let lastKnownScrollPosition = window.scrollY;
+let lastKnownScrollPosition = 0;
 window.addEventListener("scroll", () => {
+    debugger
     if (window.scrollY > lastKnownScrollPosition) {
         document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
     }
