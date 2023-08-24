@@ -368,7 +368,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
     <tr>
       <td style="overflow-wrap:break-word;word-break:break-word;padding:0px 44px 8px;"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;" align="left">
         
-  <div style="font-size: 14px; color: #333333; line-height: 190%; text-align: left; word-wrap: break-word;">
+  <div style="font-size: 14px; color: #110828; line-height: 190%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height: 190%; text-align: left;"><strong><span style="font-size: 18px; line-height: 34.2px;font-family:Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif!important;">Date: """ + date.today().strftime("%B %d, %Y") + """ </span></strong></p>
 <p style="font-size: 14px; line-height: 190%;">&nbsp;</p>
 <p style="font-size: 14px; line-height: 190%; text-align: center;"><span style="font-size: 22px; line-height: 41.8px;"><strong style="font-family:Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif!important;">Name : """ + name + """</strong><br /><strong style="font-family:Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif!important;">Phone : """ + phone + """</strong></span></p>
@@ -384,7 +384,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
     <tr>
       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 44px 30px;"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;" align="left">
         
-  <div style="font-size: 14px; color: #333333; line-height: 200%; text-align: left; word-wrap: break-word;">
+  <div style="font-size: 14px; color: #110828; line-height: 200%; text-align: left; word-wrap: break-word;">
 <p style="font-size: 14px; line-height: 200%;"><span style="font-size: 16px; line-height: 32px; font-family:Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif!important;">""" + message + """</span></p>
   </div>
 
@@ -398,7 +398,7 @@ table, td { color: #000000; } #u_body a { color: #e67e23; text-decoration: under
     <tr>
       <td style="overflow-wrap:break-word;word-break:break-word;padding:30px 30px 70px;"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;" align="left">
         
-  <div style="font-size: 14px; color: #333333; line-height: 190%; text-align: left; word-wrap: break-word;">
+  <div style="font-size: 14px; color: #110828; line-height: 190%; text-align: left; word-wrap: break-word;">
   </div>
 
       </td>

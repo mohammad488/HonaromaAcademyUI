@@ -231,7 +231,7 @@
   width: 245px;
   height: 67px;
   cursor: pointer;
-  background: #e6981c;
+  background: var(--secondary);
   border-radius: 10px;
   font-size: 40px;
   font-weight: 900;
@@ -635,7 +635,7 @@
 .creative-service-container p {
   margin: 0px;
   padding: 0px;
-  color: #333333;
+  color: #110828;
 }
 
 .creative-service-container .creative-title-secondry {
@@ -835,7 +835,7 @@
 
 .service-title {
   font-size: 29px;
-  color: #333333;
+  color: #110828;
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -871,7 +871,7 @@
 
 .venture-title {
   font-size: 30px;
-  color: #333333;
+  color: #110828;
   margin-top: 0;
   margin-bottom: 0;
 }

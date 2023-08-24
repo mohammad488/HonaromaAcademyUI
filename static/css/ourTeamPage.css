@@ -37,7 +37,7 @@
 }
 
 .nectar-shape-divider-wrap {
-    color: #333333;
+    color: #110828;
     visibility: visible;
     box-sizing: border-box;
     margin: 0;
@@ -59,7 +59,7 @@
 
 .nectar-shape-divider {
     -webkit-font-smoothing: antialiased;
-    color: #333333;
+    color: #110828;
     visibility: visible;
     font: inherit;
     box-sizing: border-box;

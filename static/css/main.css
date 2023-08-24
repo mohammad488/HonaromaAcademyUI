@@ -1,8 +1,8 @@
 @import url(../fontiran.css);
 :root {
-    --primary: #110729;
-    --secondary: #e6981c;
-    --primaryTransparent: #110729ad;
+    --primary: #110828;
+    --secondary: #ffb700;
+    --primaryTransparent: #110828ad;
 }
 
 
@@ -474,7 +474,7 @@ footer>.row {
 .section-title {
     font-size: 42px !important;
     font-weight: 400;
-    color: #333333;
+    color: #110828;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -594,7 +594,7 @@ footer>.row {
 
 .card .title {
     font-size: 25px;
-    color: #333333;
+    color: #110828;
     padding-bottom: 0.5em;
     font-weight: bold;
 }
