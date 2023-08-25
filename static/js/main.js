@@ -35,7 +35,56 @@ if (navigation.classList.contains("nav-white")) {
     navWhite = true;
 }
 let scrollUp = document.getElementById("scrollUp");
+$(document).ready(function () {
+    pageLoaded();
+});
 const pageLoaded = () => {
+    let lastKnownScrollPosition = 0;
+    let first = true;
+    window.addEventListener("scroll", () => {
+        if (first) {
+            document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
+            first = false;
+        }
+        else{
+            if (window.scrollY > lastKnownScrollPosition) {
+                document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
+            }
+            else {
+                document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
+            }
+        }
+
+        lastKnownScrollPosition = window.scrollY;
+        let navLinks = document.getElementsByClassName("nav-link");
+        if (window.scrollY == 0) {
+            if (navWhite) {
+                navigation.classList.add("nav-white");
+            }
+            document.getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
+            for (let index = 0; index < navLinks.length; index++) {
+                const element = navLinks[index];
+                element.style.removeProperty("color");
+            }
+        }
+        else {
+            if (navWhite) {
+                navigation.classList.remove("nav-white");
+            }
+            document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffffcf";
+            for (let index = 0; index < navLinks.length; index++) {
+                const element = navLinks[index];
+                element.style.color = "#110729";
+            }
+        }
+        if (window.scrollY > 300) {
+            scrollUp.style.transform = "translateY(0)";
+        }
+        else {
+
+            scrollUp.style.transform = "translateY(100px)";
+        }
+    });
     document.getElementById("loader").children[0].style.visiblity = "hidden";
     setTimeout(() => {
         document.getElementById("loader").classList.add("animate__fadeOut");
@@ -81,44 +130,3 @@ menuCollapseBtn.onclick = () => {
         });
     }, 500);
 };
-
-let lastKnownScrollPosition = 0;
-window.addEventListener("scroll", () => {
-    debugger
-    if (window.scrollY > lastKnownScrollPosition) {
-        document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
-    }
-    else {
-        document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
-    }
-
-    lastKnownScrollPosition = window.scrollY;
-    let navLinks = document.getElementsByClassName("nav-link");
-    if (window.scrollY == 0) {
-        if (navWhite) {
-            navigation.classList.add("nav-white");
-        }
-        document.getElementsByTagName("nav")[0].style.backgroundColor = "transparent";
-        for (let index = 0; index < navLinks.length; index++) {
-            const element = navLinks[index];
-            element.style.removeProperty("color");
-        }
-    }
-    else {
-        if (navWhite) {
-            navigation.classList.remove("nav-white");
-        }
-        document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffffcf";
-        for (let index = 0; index < navLinks.length; index++) {
-            const element = navLinks[index];
-            element.style.color = "#110729";
-        }
-    }
-    if (window.scrollY > 300) {
-        scrollUp.style.transform = "translateY(0)";
-    }
-    else {
-
-        scrollUp.style.transform = "translateY(100px)";
-    }
-});
