@@ -40,19 +40,14 @@ $(document).ready(function () {
 });
 const pageLoaded = () => {
     let lastKnownScrollPosition = 0;
-    let first = true;
     window.addEventListener("scroll", () => {
-        if (first) {
-            document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
-            first = false;
+        document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
+        first = false;
+        if (window.scrollY > lastKnownScrollPosition) {
+            document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
         }
-        else{
-            if (window.scrollY > lastKnownScrollPosition) {
-                document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
-            }
-            else {
-                document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
-            }
+        else {
+            document.getElementsByTagName("nav")[0].style.transform = "translateY(0)";
         }
 
         lastKnownScrollPosition = window.scrollY;
