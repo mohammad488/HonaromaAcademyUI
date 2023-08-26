@@ -12,6 +12,10 @@
     height: 50vh;
   }
 
+  #intro-container.school-intro{
+    height: 65vh;
+  }
+
   #intro-container .section-subtitle {
     font-size: 20px !important;
   }

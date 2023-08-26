@@ -14,6 +14,11 @@
     width: 100%;
 }
 
+#intro-container .col-12{
+    min-height: 35vh;
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
     #intro-container .section-title {
         font-size: 52px !important;
@@ -85,10 +90,11 @@
 
 #details-container>.section-title {
     text-align: right;
+    margin: 0;
 }
 
 #details-container>.section-subtitle {
-    text-align: justify;
+    text-align: right;
 }
 
 #details-container>.section-title {

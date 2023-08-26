@@ -683,6 +683,8 @@
 .creative-service-container a.creative-link {
   margin: 15px auto;
   font-size: 15px;
+  width: 70px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -83,7 +83,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .contact-fields form {
