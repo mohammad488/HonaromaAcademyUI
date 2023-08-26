@@ -35,7 +35,7 @@ if (navigation.classList.contains("nav-white")) {
     navWhite = true;
 }
 let scrollUp = document.getElementById("scrollUp");
-$(window).bind("load", function() {
+$(document).ready(function () {
     pageLoaded();
 });
 const pageLoaded = () => {
