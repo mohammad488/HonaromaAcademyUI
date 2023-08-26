@@ -169,10 +169,6 @@
   .imageAndText .col-md-4 {
     text-align: center;
   }
-
-  .imageAndText img {
-    width: 80%;
-  }
 }
 
 /* Services */
@@ -230,12 +226,13 @@
 }
 /* Portfolio */
 #portfolio-container {
-  padding: 0 15px;
+  padding: 0 20px;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) {
   #portfolio-container {
-    padding: 0 90px;
+    padding: 0 180px;
   }
 }
 
@@ -244,6 +241,7 @@
   padding-right: 5px;
 }
 
-.image-group>img {
+.image-group img {
   width: 100%;
+  border-radius: 10px;
 }
