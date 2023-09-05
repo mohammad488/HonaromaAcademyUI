@@ -12,18 +12,12 @@
     height: 100%;
 }
 
-@media (min-width: 768px) {
-    #intro-container .section-title {
-        font-size: 52px !important;
-    }
-}
-
 #intro-container .section-title {
     text-align: center;
 }
 
 #intro-container .section-subtitle {
-    text-align: justify;
+    text-align: right;
     color: #808080;
     font-size: 20px !important;
 }
@@ -33,7 +27,16 @@
 }
 
 #intro-container img {
-    width: 75%;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    #intro-container .section-title {
+        font-size: 52px !important;
+    }
+    #intro-container img {
+        width: 65%;
+    }
 }
 
 .nectar-shape-divider-wrap {
@@ -174,7 +177,7 @@
 }
 
 .member-card>.description>p {
-    text-align: justify!important;
+    text-align: justify !important;
 }
 
 .member-card>.description>.title {
@@ -189,4 +192,76 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: 18px;
     margin: 0 0 15px 0;
+}
+
+/* Image And Text Sctions */
+.imageAndText {
+    margin-top: 3rem;
+}
+
+.imageAndText>div {
+    align-items: center;
+}
+
+.imageAndText>div>div.col-md-8 {
+    justify-content: center;
+    opacity: 1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .imageAndText>div>div.col-md-8 {
+        height: auto;
+    }
+}
+
+.imageAndText img {
+    width: 80%;
+}
+
+.imageAndText .section-title {
+    text-align: right;
+}
+
+.imageAndText .section-subtitle {
+    font-size: 20px !important;
+    line-height: 40px;
+    color: #808080;
+    text-align: right;
+}
+
+.imageAndText .col-md-4 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .imageAndText .section-title {
+        font-size: 38px!important;
+        margin-bottom: 0!important;
+    }
+
+    .imageAndText .section-subtitle{
+        margin-top: 0!important;
+        margin-bottom: 25px!important;
+    }
+
+    .imageAndText {
+        margin-top: 0;
+    }
+
+    .imageAndText .section-title {
+        margin-top: 0;
+    }
+
+    .imageAndText .section-title,
+    .imageAndText .section-subtitle {
+        line-height: unset;
+        text-align: center;
+    }
+
+    .imageAndText.reverse>div {
+        flex-direction: column-reverse;
+    }
 }

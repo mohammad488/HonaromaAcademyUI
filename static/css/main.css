@@ -351,18 +351,6 @@ nav .logo-container{
     display: flex;
 }
 
-#side-social>a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 32px;
-    margin-left: 7px;
-    transition: 300ms;
-}
-
-#side-social>a:hover {
-    transform: scale(1.2);
-}
-
 /* Footer */
 footer {
     background-color: #f2f2f2 !important;
@@ -414,6 +402,10 @@ footer>.row {
     width: 30px;
     padding: 0 2px;
 }
+
+.social.social-lg img{
+    width:38px;
+} 
 
 .footer-image {
     text-align: left;
@@ -556,6 +548,9 @@ footer>.row {
 .rounded {
     border-radius: 200px;
 }
+.rounded-square{
+    border-radius: 10px;
+}
 
 /* Display */
 .d-none {
@@ -634,6 +629,11 @@ footer>.row {
 
 .p-3 {
     padding: 3em !important;
+}
+
+.mx-2{
+    margin-left: 2rem!important;
+    margin-right: 2rem!important;
 }
 
 .mb-0 {

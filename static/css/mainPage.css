@@ -1,7 +1,6 @@
 /* Intro */
 #intro-container {
   display: flex;
-  overflow: hidden;
 }
 
 #intro {
@@ -142,7 +141,7 @@
 
 #light-blue2 {
   position: absolute;
-  left: 1040px;
+  left: 1089px;
   top: 450px;
 }
 
@@ -619,7 +618,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  background-color: transparent;
   align-items: center;
 }
 

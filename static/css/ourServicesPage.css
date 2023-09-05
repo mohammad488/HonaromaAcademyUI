@@ -249,3 +249,9 @@
   width: 100%;
   border-radius: 10px;
 }
+
+/* Tarh Dars */
+.tarh-dars{
+  display: flex;
+  align-items: center;
+}
