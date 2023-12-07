@@ -2,19 +2,32 @@
 #intro-container {
     display: flex;
     position: relative;
-    background-color: #f61c4c;
+    background-image: url("/static/images/IMG_3536.JPG");
+    height: 500px;
+    background-blend-mode: difference;
+    background-size: cover;
+    background-position: center center;
     overflow: hidden;
     padding: 0;
 }
 
+#intro-container .section-title {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(122, 122, 122) 4px 3px 0px;
+}
+#menuExpand>i{
+    color: #fff;
+}
 #intro-container>div {
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: #00000026;
+    
 }
 
-#intro-container .col-12{
+#intro-container .col-12 {
     min-height: 35vh;
     max-width: 100%;
 }
@@ -136,43 +149,47 @@
 #about {
     margin: 5em 0;
 }
+
 @media (max-width: 768px) {
     #about {
         margin: 3em 0 1em 0;
     }
 }
 
-#about > div{
+#about>div {
     align-items: center;
 }
 
 #about .section-title {
     text-align: right;
-    font-size: 30px!important;
+    font-size: 30px !important;
 }
 
 #about .section-subtitle {
     text-align: justify;
-    font-size: 20px!important;
+    font-size: 20px !important;
     color: #808080;
 }
+
 /* Story */
-#story > div{
+#story>div {
     align-items: center;
 }
+
 #story .section-title {
     text-align: right;
-    font-size: 30px!important;
+    font-size: 30px !important;
     margin-left: 20px;
 }
 
 #story .section-subtitle {
     text-align: justify;
-    font-size: 20px!important;
+    font-size: 20px !important;
     color: #808080;
     margin-left: 20px;
     line-height: 40px;
 }
+
 #story img {
     width: 100%;
     margin-bottom: 20px;
